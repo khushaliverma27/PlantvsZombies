@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Scene2.Scene2Controller">
+   <children>
+      <AnchorPane layoutX="-14.0" layoutY="6.0" prefHeight="400.0" prefWidth="600.0" />
+      <ImageView fitHeight="412.0" fitWidth="600.0">
+         <image>
+            <Image url="@../Resources/backdrop1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="371.0" fitWidth="530.0" layoutX="56.0" layoutY="21.0">
+         <image>
+            <Image url="@../Resources/menuboard-8.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="141.0" fitWidth="189.0" layoutX="-20.0" layoutY="271.0">
+         <image>
+            <Image url="@../Resources/exit-8.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="311.0" layoutY="136.0" mnemonicParsing="false" onAction="#handlePlay" opacity="0.0" prefHeight="31.0" prefWidth="26.0" scaleX="8.0" scaleY="1.6" text="Play" />
+      <Button layoutX="264.0" layoutY="191.0" mnemonicParsing="false" onAction="#handleInstructions" opacity="0.0" scaleX="3.0" scaleY="1.2" text="Instruction" />
+      <Button layoutX="283.0" layoutY="237.0" mnemonicParsing="false" onAction="#handleAlmanac" opacity="0.0" scaleX="3.0" scaleY="1.2" text="Almanac" />
+      <Button layoutX="273.0" layoutY="289.0" mnemonicParsing="false" onAction="#handleOptions" opacity="0.0" scaleX="3.0" scaleY="1.2" text="Options" />
+      <Button layoutX="43.0" layoutY="308.0" mnemonicParsing="false" onAction="#handleExit" opacity="0.0" scaleX="2.0" scaleY="2.0" text="Exit" />
+   </children>
+</AnchorPane>
