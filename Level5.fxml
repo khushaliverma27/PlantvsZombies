@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GamePlay5.Level5">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="618.0">
+         <image>
+            <Image url="@../Resources/BG3-8.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="282.0" fitWidth="466.0" layoutY="-82.0">
+         <image>
+            <Image url="@../Resources/SeedSlot-8.png" />
+         </image>
+      </ImageView>
+      <GridPane gridLinesVisible="true" layoutX="140.0" layoutY="79.0" prefHeight="260.0" prefWidth="441.0" AnchorPane.bottomAnchor="61.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="37.0" AnchorPane.topAnchor="79.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints />
+        </rowConstraints>
+         <children>
+            <ImageView fx:id="Tile17" fitHeight="55.0" fitWidth="52.0" onDragDropped="#handleDragDrop17" onDragOver="#handlePlantDrag" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../Resources/lawn%20tile%20light.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tile19" fitHeight="59.0" fitWidth="52.0" onDragDropped="#handleDragDrop19" onDragOver="#handlePlantDrag" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../Resources/lawn%20tile%20light.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tile21" fitHeight="63.0" fitWidth="52.0" onDragDropped="#handleDragDrop21" onDragOver="#handlePlantDrag" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../Resources/lawn%20tile%20light.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tile23" fitHeight="61.0" fitWidth="52.0" onDragDropped="#handleDragDrop23" onDragOver="#handlePlantDrag" GridPane.columnIndex="6" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../Resources/lawn%20tile%20light.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tile1" fitHeight="55.0" fitWidth="52.0" onDragDropped="#handleDragDrop1" onDragOver="#handlePlantDrag">
+               <image>
+                  <Image url="@../Resources/lawn%20tile%20light.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tile3" fitHeight="55.0" fitWidth="52.0" onDragDropped="#handleDragDrop3" onDragOver="#handlePlantDrag" GridPane.columnIndex="2">
+               <image>
+                  <Image url="@../Resources/lawn%20tile%20light.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tile5" fitHeight="55.0" fitWidth="52.0" onDragDropped="#handleDragDrop5" onDragOver="#handlePlantDrag" GridPane.columnIndex="4">
+               <image>
+                  <Image url="@../Resources/lawn%20tile%20light.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tile7" fitHeight="55.0" fitWidth="52.0" onDragDropped="#handleDragDrop7" onDragOver="#handlePlantDrag" GridPane.columnIndex="6">
+               <image>
+                  <Image url="@../Resources/lawn%20tile%20light.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tile15" fitHeight="55.0" fitWidth="52.0" onDragDropped="#handleDragDrop15" onDragOver="#handlePlantDrag" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../Resources/lawn%20tile%20light.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile17" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tile11" fitHeight="55.0" fitWidth="52.0" onDragDropped="#handleDragDrop11" onDragOver="#handlePlantDrag" GridPane.columnIndex="5" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../Resources/lawn%20tile%20light.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tile2" fitHeight="55.0" fitWidth="52.0" onDragDropped="#handleDragDrop2" onDragOver="#handlePlantDrag" GridPane.columnIndex="1">
+               <image>
+                  <Image url="@../Resources/lawn%20tile%20dark.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tile18" fitHeight="55.0" fitWidth="52.0" onDragDropped="#handleDragDrop18" onDragOver="#handlePlantDrag" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../Resources/lawn%20tile%20dark.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tile14" fitHeight="55.0" fitWidth="52.0" onDragDropped="#handleDragDrop14" onDragOver="#handlePlantDrag" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../Resources/lawn%20tile%20dark.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tile4" fitHeight="55.0" fitWidth="52.0" onDragDropped="#handleDragDrop4" onDragOver="#handlePlantDrag" GridPane.columnIndex="3">
+               <image>
+                  <Image url="@../Resources/lawn%20tile%20dark.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tile20" fitHeight="55.0" fitWidth="52.0" onDragDropped="#handleDragDrop20" onDragOver="#handlePlantDrag" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../Resources/lawn%20tile%20dark.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tile12" fitHeight="55.0" fitWidth="52.0" onDragDropped="#handleDragDrop12" onDragOver="#handlePlantDrag" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../Resources/lawn%20tile%20dark.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tile22" fitHeight="55.0" fitWidth="52.0" onDragDropped="#handleDragDrop22" onDragOver="#handlePlantDrag" GridPane.columnIndex="5" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../Resources/lawn%20tile%20dark.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tile10" fitHeight="55.0" fitWidth="52.0" onDragDropped="#handleDragDrop10" onDragOver="#handlePlantDrag" GridPane.columnIndex="6" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../Resources/lawn%20tile%20dark.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tile8" fitHeight="55.0" fitWidth="52.0" onDragDropped="#handleDragDrop8" onDragOver="#handlePlantDrag" GridPane.columnIndex="7">
+               <image>
+                  <Image url="@../Resources/lawn%20tile%20dark.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tile24" fitHeight="55.0" fitWidth="52.0" onDragDropped="#handleDragDrop24" onDragOver="#handlePlantDrag" GridPane.columnIndex="7" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../Resources/lawn%20tile%20dark.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tile9" fitHeight="55.0" fitWidth="52.0" onDragDropped="#handleDragDrop9" onDragOver="#handlePlantDrag" GridPane.columnIndex="7" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../Resources/lawn%20tile%20light.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tile16" fitHeight="55.0" fitWidth="52.0" onDragDropped="#handleDragDrop16" onDragOver="#handlePlantDrag" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../Resources/lawn%20tile%20dark.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tile6" fitHeight="55.0" fitWidth="52.0" onDragDropped="#handleDragDrop6" onDragOver="#handlePlantDrag" GridPane.columnIndex="5">
+               <image>
+                  <Image url="@../Resources/lawn%20tile%20dark.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tile31" fitHeight="55.0" fitWidth="52.0" onDragDropped="#handleDragDrop31" onDragOver="#handlePlantDrag" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../Resources/lawn%20tile%20light.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tile33" fitHeight="55.0" fitWidth="52.0" onDragDropped="#handleDragDrop33" onDragOver="#handlePlantDrag" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../Resources/lawn%20tile%20light.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tile35" fitHeight="55.0" fitWidth="52.0" onDragDropped="#handleDragDrop35" onDragOver="#handlePlantDrag" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../Resources/lawn%20tile%20light.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tile37" fitHeight="55.0" fitWidth="52.0" onDragDropped="#handleDragDrop37" onDragOver="#handlePlantDrag" GridPane.columnIndex="4" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../Resources/lawn%20tile%20light.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tile29" fitHeight="55.0" fitWidth="52.0" onDragDropped="#handleDragDrop29" onDragOver="#handlePlantDrag" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../Resources/lawn%20tile%20light.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tile27" fitHeight="55.0" fitWidth="52.0" onDragDropped="#handleDragDrop27" onDragOver="#handlePlantDrag" GridPane.columnIndex="5" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../Resources/lawn%20tile%20light.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tile39" fitHeight="55.0" fitWidth="52.0" onDragDropped="#handleDragDrop39" onDragOver="#handlePlantDrag" GridPane.columnIndex="6" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../Resources/lawn%20tile%20light.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tile25" fitHeight="55.0" fitWidth="52.0" onDragDropped="#handleDragDrop25" onDragOver="#handlePlantDrag" GridPane.columnIndex="7" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../Resources/lawn%20tile%20light.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tile32" fitHeight="55.0" fitWidth="52.0" onDragDropped="#handleDragDrop32" onDragOver="#handlePlantDrag" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../Resources/lawn%20tile%20dark.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tile34" fitHeight="55.0" fitWidth="52.0" onDragDropped="#handleDragDrop34" onDragOver="#handlePlantDrag" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../Resources/lawn%20tile%20dark.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tile30" fitHeight="55.0" fitWidth="52.0" onDragDropped="#handleDragDrop30" onDragOver="#handlePlantDrag" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../Resources/lawn%20tile%20dark.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tile36" fitHeight="55.0" fitWidth="52.0" onDragDropped="#handleDragDrop36" onDragOver="#handlePlantDrag" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../Resources/lawn%20tile%20dark.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tile28" fitHeight="55.0" fitWidth="52.0" onDragDropped="#handleDragDrop28" onDragOver="#handlePlantDrag" GridPane.columnIndex="4" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../Resources/lawn%20tile%20dark.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tile38" fitHeight="55.0" fitWidth="52.0" onDragDropped="#handleDragDrop38" onDragOver="#handlePlantDrag" GridPane.columnIndex="5" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../Resources/lawn%20tile%20dark.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tile26" fitHeight="55.0" fitWidth="52.0" onDragDropped="#handleDragDrop26" onDragOver="#handlePlantDrag" GridPane.columnIndex="6" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../Resources/lawn%20tile%20dark.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tile40" fitHeight="55.0" fitWidth="52.0" onDragDropped="#handleDragDrop40" onDragOver="#handlePlantDrag" GridPane.columnIndex="7" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../Resources/lawn%20tile%20dark.jpg" />
+               </image>
+            </ImageView>
+            <ImageView visible="false" GridPane.columnIndex="7" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../Resources/Dancing_Zombie.gif" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tile13" fitHeight="55.0" fitWidth="52.0" onDragDropped="#handleDragDrop15" onDragOver="#handlePlantDrag" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../Resources/lawn%20tile%20light.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile32" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile15" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile2" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false" GridPane.columnIndex="1">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile16" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile14" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile18" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile33" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile3" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false" GridPane.columnIndex="2">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile34" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile26" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile13" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile4" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false" GridPane.columnIndex="3">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile27" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile19" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile35" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile5" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false" GridPane.columnIndex="4">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile36" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile33" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile20" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile22" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false" GridPane.columnIndex="5" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile11" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false" GridPane.columnIndex="5" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile6" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false" GridPane.columnIndex="5">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile37" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false" GridPane.columnIndex="4" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile28" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false" GridPane.columnIndex="4" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile12" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile21" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile27" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false" GridPane.columnIndex="5" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile23" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile10" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile7" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false" GridPane.columnIndex="6">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile38" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false" GridPane.columnIndex="5" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile26" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile25" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false" GridPane.columnIndex="7" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile9" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false" GridPane.columnIndex="7" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile8" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false" GridPane.columnIndex="7">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile1" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile39" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile4" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false" GridPane.columnIndex="7" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile24" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false" GridPane.columnIndex="7" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PeaTile17" fitHeight="18.0" fitWidth="19.0" onDragDropped="#handleDragDrop13" onDragOver="#handlePlantDrag" visible="false" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../Resources/Pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Zombie3" visible="false" GridPane.columnIndex="7" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../Resources/Reg_Zombie.gif" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Zombie4" visible="false" GridPane.columnIndex="7" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../Resources/Reg_Zombie.gif" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ZombieCap2" visible="false" GridPane.columnIndex="7" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../Resources/Zombie_Walk_cap.gif" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="SunLane1" onMouseClicked="#handleSunClick1" visible="false">
+               <image>
+                  <Image url="@../Resources/sun.gif" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="SunLane2" onMouseClicked="#handleSunClick2" visible="false" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../Resources/sun.gif" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="SunLane3" onMouseClicked="#handleSunClick3" visible="false" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../Resources/sun.gif" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="SunLane5" onMouseClicked="#handleSunClick5" visible="false" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../Resources/sun.gif" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="SunLane4" onMouseClicked="#handleSunClick4" visible="false" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../Resources/sun.gif" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="CherryLane3" fitHeight="154.0" fitWidth="165.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../Resources/CherryBomb_Idle.gif" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="CherryLane1" fitHeight="154.0" fitWidth="165.0" pickOnBounds="true" preserveRatio="true" translateX="5.0" visible="false" GridPane.columnIndex="3">
+               <image>
+                  <Image url="@../Resources/CherryBomb_Idle.gif" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="CherryLane2" fitHeight="154.0" fitWidth="165.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../Resources/CherryBomb_Idle.gif" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="CherryLane4" fitHeight="154.0" fitWidth="165.0" pickOnBounds="true" preserveRatio="true" translateX="-50.0" visible="false" GridPane.columnIndex="4" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../Resources/CherryBomb_Idle.gif" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="CherryLane5" fitHeight="154.0" fitWidth="165.0" pickOnBounds="true" preserveRatio="true" translateY="50.0" visible="false" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../Resources/CherryBomb_Idle.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+      <ImageView fitHeight="61.0" fitWidth="86.0" layoutX="525.0" layoutY="316.0">
+         <image>
+            <Image url="@../Resources/Back-8.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pea" fitHeight="34.0" fitWidth="36.0" layoutX="67.0" layoutY="14.0" onDragDetected="#handleDrag">
+         <image>
+            <Image url="@../Resources/pea_shooter.gif" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelsun" layoutX="32.0" layoutY="45.0" text="100">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="549.0" layoutY="331.0" mnemonicParsing="false" onAction="#handleBack" opacity="0.0" text="Back" />
+      <Line fx:id="Path" endX="300.0" layoutX="256.0" layoutY="213.0" opacity="0.0" startX="-100.0" />
+      <ImageView fx:id="SunFlower" fitHeight="45.0" fitWidth="42.0" layoutX="106.0" layoutY="10.0" onDragDetected="#handleDrag2">
+         <image>
+            <Image url="@../Resources/sun_flower.gif" />
+         </image>
+      </ImageView>
+      <Label layoutX="119.0" layoutY="48.0" text="50" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="Walnut" fitHeight="34.0" fitWidth="36.0" layoutX="148.0" layoutY="12.0" onDragDetected="#handleDrag3">
+         <image>
+            <Image url="@../Resources/walnut_full_life.gif" />
+         </image>
+      </ImageView>
+      <Label layoutX="157.0" layoutY="46.0" text="50" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="Cherry" fitHeight="55.0" fitWidth="62.0" layoutX="182.0" onDragDetected="#handleDrag4">
+         <image>
+            <Image url="@../Resources/cherrybomb.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="63.0" layoutY="209.0">
+         <image>
+            <Image url="@../Resources/Lawnmower_Idle.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="63.0" layoutY="259.0">
+         <image>
+            <Image url="@../Resources/Lawnmower_Idle.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="63.0" layoutY="93.0">
+         <image>
+            <Image url="@../Resources/Lawnmower_Idle.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="63.0" layoutY="53.0">
+         <image>
+            <Image url="@../Resources/Lawnmower_Idle.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Zombie1" layoutX="499.0" layoutY="29.0" visible="false">
+         <image>
+            <Image url="@../Resources/Reg_Zombie.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ZombieCap" layoutX="492.0" layoutY="79.0" visible="false">
+         <image>
+            <Image url="@../Resources/Zombie_Walk_cap.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="60.0" layoutY="150.0">
+         <image>
+            <Image url="@../Resources/Lawnmower_Idle.gif" />
+         </image>
+      </ImageView>
+      <Label layoutX="187.0" layoutY="42.0" text="150" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="letsrockimage" fitHeight="59.0" fitWidth="137.0" layoutX="270.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/letsrock.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="letsrockbutton" layoutX="265.0" layoutY="338.0" mnemonicParsing="false" onAction="#handleLetsRock" prefHeight="55.0" prefWidth="124.0" style="-fx-background-color: transparent;" text="lets rock" textFill="TRANSPARENT" />
+      <ImageView fx:id="sun1" fitHeight="55.0" fitWidth="51.0" layoutX="415.0" layoutY="15.0" onMouseClicked="#handleSunClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/sun.gif" />
+         </image>
+      </ImageView>
+      <Label fx:id="nosun" layoutX="228.0" layoutY="29.0" prefHeight="18.0" prefWidth="163.0" text="NOT ENOUGH SUN" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Label>
+      <ProgressBar fx:id="Bar1" layoutX="403.0" layoutY="366.0" prefWidth="200.0" progress="0.0" />
+      <Label layoutX="72.0" layoutY="48.0" text="100" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="Zombie2" layoutX="507.0" layoutY="83.0" visible="false">
+         <image>
+            <Image url="@../Resources/Reg_Zombie.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Zombie5" layoutX="517.0" layoutY="275.0" translateY="-30.0" visible="false">
+         <image>
+            <Image url="@../Resources/Reg_Zombie.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ZombieDance" layoutX="507.0" layoutY="123.0" visible="false">
+         <image>
+            <Image url="@../Resources/Dancing_Zombie.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="70.0" layoutX="540.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Fan.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="539.0" mnemonicParsing="false" onAction="#handleRetreat" prefHeight="70.0" prefWidth="65.0" style="-fx-background-color: transparent;" text="Retreat" textFill="TRANSPARENT" />
+   </children>
+</AnchorPane>
